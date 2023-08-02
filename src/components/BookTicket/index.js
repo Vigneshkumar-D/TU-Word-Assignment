@@ -16,12 +16,15 @@ import {
     SubmitButton,
     PersonCount, 
     MainPersonCon,
-    PersonsCount
+    PersonsCount,
+    SubmitContainer,
+    SuccessHeading,
+    SuccessDes
 } from './styledComponent'
     import Header from '../Header'
 
 class BookTicket extends Component{
-    state = {noOfPersons: '', name: '', age: '', govtId: '', mobNum: '', email: ''}
+    state = {noOfPersons: '', name: '', age: '', govtId: '', mobNum: '', email: '', submitted: false}
 
     onChangePersons = event => {
         this.setState({noOfPersons: event.target.value});
@@ -85,11 +88,34 @@ class BookTicket extends Component{
 
     onSubmitForm = event => {
         event.preventDefault()
-        this.setState({noOfPersons: '', name: '', age: '', govtId: '', mobNum: '', email: ''});
+        const {name, age, govtId, mobNum, email} = this.state
+        console.log(name)
+         if(name.length>0 && age.length > 0 && govtId.length>0 && mobNum.length>1  && email.length>0 ){
+            this.setState(prevState => ({submitted: ! prevState.submitted}));
+            this.setState({noOfPersons: '', name: '', age: '', govtId: '', mobNum: '', email: ''});
+         }
+        
+
     }
 
     render(){
-        const {noOfPersons, name, age, govtId, mobNum, email} = this.state
+        const {submitted, noOfPersons, name, age, govtId, mobNum, email} = this.state
+        
+        if(submitted){
+            return(
+                <>
+            <Header />
+            <BookTicketContainer>
+                <SubmitContainer>
+                    <SuccessHeading>
+                    Success!
+                    </SuccessHeading>
+                    <SuccessDes>Congratulations, <br/> You have Successfully booked your Tickets.</SuccessDes>
+                </SubmitContainer>
+                </BookTicketContainer>
+                </>
+            )
+        }
 
         return(
             <>

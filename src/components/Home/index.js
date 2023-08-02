@@ -185,14 +185,14 @@ class Home extends Component{
                     <OfferContainer>
                         <OfferHeading>Special Offer!!!</OfferHeading>
                         <CostDetailsSubContainer>
-                        <OfferOne>
-                            Special Independence Day offer valid for bookings made on or before till August 14th 2023 -
-                            Cost per adult - USD 1322
-                        </OfferOne>
-                        <OfferOne>
-                            Special Independence Day offer valid for bookings made on or before till August 14th 2023 -
-                            Cost per child - USD 1127
-                        </OfferOne>
+                            <OfferOne>
+                                Special Independence Day offer valid for bookings made on or before till August 14th 2023 -
+                                Cost per adult - USD 1322
+                            </OfferOne>
+                            <OfferOne>
+                                Special Independence Day offer valid for bookings made on or before till August 14th 2023 -
+                                Cost per child - USD 1127
+                            </OfferOne>
                         </CostDetailsSubContainer>
                     </OfferContainer>
                 </CostDetailsContainer>

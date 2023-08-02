@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 export const HomeContainer = styled.div`
-display: flex;
-flex-direction: column;
-min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 ` 
 export const HomeSubContainer = styled.div`
     display: flex;
@@ -19,13 +19,14 @@ export const DescriptionContainer = styled.div`
     margin-top: 5%;
     padding: 4%; 
     border: 1px solid green;
-    border-radius: 8px;
+    border-radius: 10px;
+
 `
 export const OverViewHeadingCon = styled.div`
     
 ` 
 export const OverViewHeading  = styled.h1`
-    font-family: Georgia, serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-weight: 600;
     text-align: center;
     color: #696969;
@@ -42,7 +43,6 @@ export  const MainHeading = styled.h1`
     font-family: Georgia, serif;
     font-weight: 600;
     text-align: center;
-    // color: #696969;
     margin-top: 5%;
     text-shadow: 2px 4px 4px #e2e8f0;
 ` 
@@ -50,6 +50,7 @@ export const MainDescription = styled.p`
     font-size: 20px;
     text-align: center;
     font-family: Trebuchet MS, sans-serif;
+    font-family: Georgia, serif;
     font-weight: 500;
     color: gray;
     align-self: center;
@@ -107,35 +108,35 @@ export const Description = styled.p`
     margin: 0px;
 `
 export const BookNowButton = styled.button`
-font-family: 'Lato', sans-serif;
-font-size: 16px;
-font-weight: 600;
-color: green;
-background-color: #ffffff;
-border: 1px solid green;
-border-radius: 5px;
-padding: 10px;
-width: 150px;
-cursor: pointer;
-align-self: center;
-&:hover {
-    background-color: green;
-    color: #ffffff;
-  }
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: green;
+    background-color: #ffffff;
+    border: 1px solid green;
+    border-radius: 5px;
+    padding: 10px;
+    width: 150px;
+    cursor: pointer;
+    align-self: center;
+    &:hover {
+        background-color: green;
+        color: #ffffff;
+    }
 `
 export const JoinJuneryHeading = styled.h1`
     font-size: 38px;
     padding-left: 5%;
     padding-right: 5%;
-    font-family: Georgia, serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-weight: 600;
     text-align: center;
-    // color: #3b82f6;
+    font-style: italic;
     color: green;
     margin-top: 7%;
     margin-bottom: 5%;
     align-self:center;
-    width: 75%;
+    width: 73%;
     padding: 10px;
     border-bottom: 1px solid green;
 `
@@ -143,7 +144,7 @@ export const ItineraryHeading = styled.h1`
     font-size: 38px;
     padding-left: 5%;
     padding-right: 5%;
-    font-family: Georgia, serif;
+    font-family: 'Trebuchet MS', sans-serif;
     font-weight: 600;
     text-align: center;
     color: green;
@@ -153,55 +154,51 @@ export const ItineraryHeading = styled.h1`
     border-bottom: 1px solid green;
 `
 export const ItineraryListTag = styled.ul`
-display: flex;
-flex-direction: column;
-align-item: center;
-flex-grow: 1;
-padding-left: 0px;
-// border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-item: center;
+    flex-grow: 1;
+    padding-left: 0px;
 `
 export const ItineraryItemsSubContainer = styled.div`
-display:flex;
-flex-direction:column;
-justify-content: space-around;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
 `
 export const ItineraryItemsSubContainerOne = styled.div`
-display: flex;
-flex-direction: row;
-// width: 100%;
-justify-content: space-between;
-align-item: center;
-margin-bottom: 4%;
-padding: 15px;
-border-radius: 10px;
-// height: 450px;
-// box-shadow:  0px 3px 7px 3px #e2e8f0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-item: center;
+    margin-bottom: 4%;
+    padding: 15px;
+    border-radius: 10px;
 `
 export const DayAndDateHeading = styled.h1`
-margin-bottom: 3%;
-font-family: Trebuchet MS, sans-serif;
-font-size: ;
-color: green;
-font-weight: 600;
-text-align: center;
-padding: 10px;
-width: 25%;
-align-self: center;
-border-bottom: 1px solid green;
+    margin-bottom: 3%;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: ;
+    color: green;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    width: 25%;
+    align-self: center;
+    border-bottom: 1px solid green;
 `
 export const ItineraryItemsTopContainer = styled.div`
-display:flex;
-flex:direction:column;
-justify-content: center;
-align-item:center;
+    display:flex;
+    flex:direction:column;
+    justify-content: center;
+    align-item:center;
 `
 export const ItineraryItemsDescription =styled.p`
     font-size: 18px;
     text-align: left;
     align-self: center;
     width: 50%;
+    font-family: 'Trebuchet MS', sans-serif;
     line-height: 25px;
-    // text-align: center;
     margin-bottom: 0px;
 `
 export const EndofService = styled.p`
@@ -209,119 +206,120 @@ export const EndofService = styled.p`
     align-self: center;
     font-weight: 600;
     margin-top: 0px;
+    font-family: 'Trebuchet MS', sans-serif;
     text-align: center;
 `
 export const  CostDetailsContainer = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-item: center;
-// box-shadow: 0px 3px 7px 3px #e2e8f0;
-width: 90%;
-// height: 300px;
-align-self: center;
-padding-left: 4%;
-padding-right: 4%;
-border-radius: 10px;
-padding-top: 2%;
-padding-bottom: 2%;
-margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-item: center;
+    width: 100%;
+    margin-right: 0px;
+    align-self: center;
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    border: 1px solid green;
 `
 export const ConstHeading = styled.h1`
-margin-bottom: 3%;
-font-family: Trebuchet MS, sans-serif;
-font-size: 38px;
-color: green;
-font-weight: 600;
-text-align: center;
-padding: 10px;
-width: 8%;
-align-self: center;
-border-bottom: 1px solid green;
+    margin-bottom: 3%;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 38px;
+    color: green;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    width: 8%;
+    align-self: center;
+    border-bottom: 1px solid green;
 `
 export const CostDetails = styled.li`
-font-size: 20px;
-margin-bottom: 0px;
-margin-top: 0px;
-list-style-type: disc;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-family: 'Trebuchet MS', sans-serif;
+    list-style-type: disc;
 `
 export const OfferContainer = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center
-align-item: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+    align-item: center;
 `
 export const OfferHeading = styled.h1`
-margin-top: 5%;
-margin-bottom: 3%;
-font-family: Trebuchet MS, sans-serif;
-font-size: 38px;
-color: green;
-font-weight: 600;
-text-align: center;
-padding: 10px;
-width: 25%;
-align-self: center;
-border-bottom: 1px solid green;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-family: Trebuchet MS, sans-serif;
+    font-size: 38px;
+    color: green;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    width: 25%;
+    align-self: center;
+    border-bottom: 1px solid green;
 `
 export const OfferOne = styled.li`
-font-size: 20px;
-align-self: center;
-font-weight: 600;
-margin-top: 0px;
-// color: #FF8000;
-list-style-type: disc;
+    font-size: 20px;
+    align-self: center;
+    margin-top: 0px;
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 25px;
+    list-style-type: disc;
 `
 export const TermsandConditionsHeading = styled.h1`
-margin-bottom: 3%;
-margin-top: 5%;
-font-family: 'Trebuchet MS', sans-serif;
-// font-family: 'Dancing Script';
-font-size: 38px;
-color: green;
-font-weight: 600;
-text-align: center;
-padding: 10px;
-width: 30%;
-align-self: center;
-border-bottom: 1px solid green;
+    margin-bottom: 3%;
+    margin-top: 5%;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 38px;
+    color: green;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    width: 30%;
+    align-self: center;
+    border-bottom: 1px solid green;
 `
 export const TermsandConditionsContainer = styled.ul`
-display: flex;
-flex-direction: column;
-justify-content: center
-align-item: center;
-width: 80%;
-padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+    align-item: center;
+    width: 80%;
+    font-family: 'Trebuchet MS', sans-serif;
+    padding-left: 10%;
 `
 export const TandCListItem = styled.li`
-font-size: 18px;
-font-weight: 400;
-line-height: 30px;
-margin-top: 0px;
-list-style-type: disc;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 0px;
+    font-family: 'Trebuchet MS', sans-serif;
+    list-style-type: disc;
 `
 export const CostDetailsSubContainer = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-item: center;
-width: 100%;
-padding: 3%;
-border-radius: 10px;
-box-shadow: 0px 3px 7px 3px #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-item: center;
+    width: 60%;
+    height: 100px;
+    align-self: center;
+    padding: 3%;
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px 3px #e2e8f0;
 `
 export const BankDetailsContainer = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-item: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-item: center;
 `
 export const BankDetailsHeading = styled.h1`
     margin-bottom: 3%;
     margin-top: 5%;
     font-family: 'Trebuchet MS', sans-serif;
-    // font-family: 'Dancing Script';
     font-size: 38px;
     color: green;
     font-weight: 600;
@@ -337,6 +335,7 @@ export const BankDetailsDescription =styled.p`
     text-align: left;
     align-self: center;
     width: 50%;
+    font-family: 'Trebuchet MS', sans-serif;
     line-height: 25px;
     text-align: center;
     margin-bottom: 2%;
@@ -348,13 +347,13 @@ export const BankDetailsSubContainer = styled.div`
     align-item: center;
 `
 export const ContactUsContainer = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-item: center;
-background-color: #000000;
-margin-top: 5%;
-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-item: center;
+    background-color: #000000;
+    margin-top: 5%;
+    width: 100%;
 `
 export const ContactsHeading = styled.h1`
     margin-bottom: 3%;
@@ -374,6 +373,7 @@ export const Email =styled.p`
     text-align: left;
     align-self: center;
     width: 50%;
+    font-family: 'Trebuchet MS', sans-serif;
     line-height: 25px;
     text-align: center;
     margin-bottom: 2%;
@@ -385,22 +385,23 @@ export const MobileNum =styled.p`
     text-align: left;
     align-self: center;
     width: 50%;
+    font-family: 'Trebuchet MS', sans-serif;
     line-height: 25px;
     text-align: center;
     margin-bottom: 2%;
     color: #ffffff;
 `
 export const ContactUsSubContainer = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-item: center;
-border: 1px solid green;
-width: 45%;
-border-radius: 5px; 
-flex-wrap: wrap;
-align-self: center;
-margin-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-item: center;
+    border: 1px solid green;
+    width: 45%;
+    border-radius: 5px; 
+    flex-wrap: wrap;
+    align-self: center;
+    margin-bottom: 3%;
 `
 export const PaymentTermsandCancellationPolicyContainer = styled.div`
     display: flex;
@@ -431,6 +432,7 @@ export const PolicyList = styled.ul`
 export const PolicyListItems = styled.li`
     font-size: 18px;
     font-weight: 400;
+    font-family: 'Trebuchet MS', sans-serif;
     line-height: 30px;
     margin-top: 0px;
     list-style-type: disc;
@@ -442,15 +444,13 @@ export const IncluionAndExclutionContainer = styled.div`
     align-item: center;
     padding-left: 7%;
     margin-top: 4%;
-    // border: 1px solid green;
+    border-radius: 10px;
 
 `
 export const IncluionContainer = styled.div`
     display: flex;
     flex-direction: column;
-    // justify-content: flex-start;
     align-item: center;
-    // padding-left: 7%;
 `
 export const InclutionHeading = styled.h1`
     margin-bottom: 3%;
@@ -480,14 +480,13 @@ export const Incluionitem = styled.li`
     font-weight: 400;
     line-height: 30px;
     margin-top: 0px;
+    font-family: 'Trebuchet MS', sans-serif;
     list-style-type: disc;
 `
 export const ExcluionContainer = styled.div`
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     align-item: center;
-    // padding: 2%;
 `
 export const ExclutionHeading = styled.h1`
     margin-bottom: 3%;
@@ -513,6 +512,7 @@ export const ExclutionItemContainer = styled.ul`
 export const Excluionitem = styled.li`
     font-size: 18px;
     font-weight: 400;
+    font-family: 'Trebuchet MS', sans-serif;
     line-height: 30px;
     margin-top: 0px;
     list-style-type: disc;

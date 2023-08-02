@@ -1,0 +1,13 @@
+.link-item{
+    text-decoration: none;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    &:hover {
+        color: green;
+        font-weight: 600;
+    }
+
+}
