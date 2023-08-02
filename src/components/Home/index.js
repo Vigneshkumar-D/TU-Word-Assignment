@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import {v4 as uuidv4} from 'uuid';
-import {Link, Redirect} from 'react-router-dom' 
+import {Redirect} from 'react-router-dom' 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import {
